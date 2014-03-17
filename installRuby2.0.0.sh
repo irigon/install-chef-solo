@@ -13,3 +13,5 @@ apt-install curl
 source $HOME/.rvm/scripts/rvm
 rvm install ruby-2.0.0
 rvm use --default 2.0.0
+gem update --no-rdoc --no-ri
+gem install ohai chef --no-rdoc --no-ri
