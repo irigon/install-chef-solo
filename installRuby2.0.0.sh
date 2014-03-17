@@ -10,7 +10,7 @@ function apt-install {
 
 apt-install curl
 \curl -sSL https://get.rvm.io | bash -s stable --ruby=2.0.0
-source $HOME/.rvm/scripts/rvm
+#source $HOME/.rvm/scripts/rvm
 #rvm get stable
 #rvm pkg install openssl
 #rvm install ruby-2.0.0
