@@ -28,5 +28,8 @@ rvm use --default 2.0.0
 # install chef
 gem update --no-rdoc --no-ri
 gem install ohai chef --no-rdoc --no-ri
+gem install bundle
+
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" export PATH=$PATH:$HOME/.rvm/bin' >> $HOME/.bashrc
 
 # run cookbooks
