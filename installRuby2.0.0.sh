@@ -25,11 +25,12 @@ source $HOME/.rvm/scripts/rvm
 rvm install ruby-2.0.0
 rvm use --default 2.0.0
 
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" export PATH=$PATH:$HOME/.rvm/bin' >> $HOME/.bashrc
+
 # install chef
 gem update --no-rdoc --no-ri
 gem install ohai chef --no-rdoc --no-ri
 gem install bundle
-
-echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" export PATH=$PATH:$HOME/.rvm/bin' >> $HOME/.bashrc
+bundle install
 
 # run cookbooks
